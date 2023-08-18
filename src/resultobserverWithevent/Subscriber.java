@@ -8,8 +8,7 @@ package resultobserverWithevent;
 public class Subscriber implements ScoreListener {
     /* ต้องการให้แสดงผลล่าสุดยังไง */
     @Override
-    public void scoreChange(ScoreEvent evn) {
-        System.out.println("live result: " 
-                + evn.getScoreLine());
+    public void scoreChange(ScoreEvent evt) {
+        System.out.println("live result: " + evt.getScoreLine());
     }
 }
